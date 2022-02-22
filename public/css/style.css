@@ -128,7 +128,6 @@ body {
 .container .section {
   border: 5px solid #ff00bf;
   background: rgba(255, 255, 255, 0.08);
-  margin: auto;
   width: 100%;
 }
 .container .section h3 {
@@ -174,8 +173,29 @@ footer .copy {
 }
 
 /* FIN FOOTER */
-@media screen and (max-width: 991px) {
-  /* style pr le header */
+@media screen and (max-width: 990px) {
+  footer span {
+    margin-right: 30px;
+    font-size: 13px;
+  }
+
+  /* FIN FOOTER */
 }
+/* FIN TABLETTE */
+@media screen and (max-width: 760px) {
+  /* style pr le header */
+  .container h2 {
+    font-size: 1.6rem;
+  }
+
+  /* fin header */
+  footer span {
+    margin-right: 15px;
+    font-size: 10px;
+  }
+
+  /* FIN FOOTER */
+}
+/* FIN MOBILE */
 
 /*# sourceMappingURL=style.css.map */
