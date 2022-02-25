@@ -135,6 +135,7 @@ body {
         }
     }
     .section {
+        display: flex;
         border: 5px solid rgb(255, 0, 191);
         background: rgba(255, 255, 255, 0.08);
         // margin: auto;
@@ -169,7 +170,7 @@ body {
 footer {
     margin-top: 150px;
     background: rgba(255, 255, 255, 0.08);
-    height: 40vh;
+    height: 30vh;
     .para1 {
         border: 5px solid rebeccapurple;
         padding: 40px;
@@ -190,6 +191,12 @@ footer {
 // MEDIA QUERY
 // TABLETTE
 @media screen and (max-width: 990px) {
+    // MAIN
+    main {
+        .section {
+            flex-direction: column;
+        }
+    }
     // FOOTER
     footer {
         span {
@@ -209,6 +216,13 @@ footer {
     .container {
         h2 {
             font-size: 1.6rem;
+        }
+    }
+    // MAIN
+    main {
+        .section {
+            margin: auto;
+            flex-direction: column;
         }
     }
     /* fin header */
